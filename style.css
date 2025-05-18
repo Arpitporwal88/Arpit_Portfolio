@@ -17,7 +17,7 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;;
   background: var(--light);
   color: var(--primary);
   scroll-behavior: smooth;
@@ -69,6 +69,8 @@ nav.navbar {
   text-decoration: none;
   font-size: 1.05rem;
   transition: color 0.2s;
+  margin: 5px;
+  border-radius: 5px;
 }
 
 .nav-links li a:hover {
@@ -93,7 +95,7 @@ nav.navbar {
 .menu-toggle {
   display: none;
   font-size: 1.7em;
-  color: var(--white);
+  color: var(--primary);
   cursor: pointer;
 }
 
@@ -179,33 +181,16 @@ nav.navbar {
   color: var(--primary);
 }
 .about-text p {
-  font-size: 1.15rem;
-  color: var(--accent);
-  margin: 0;
+    font-size: 1.06rem;
+    color: var(--primary);
+    letter-spacing: 1px;
+    margin: 0;
 }
 
-.work-section h2, .skills-section h2, .projects-section h2, .contact-section h2 {
-  text-align: center;
-  font-size: 2rem;
-  color: var(--primary);
-  margin-bottom: 15px;
+ .skills-section h2, .projects-section h2, .contact-section h2 {
+  margin-bottom: 70px;
 }
-.work-section h3 {
-  text-align: center;
-  font-weight: 400;
-  color: var(--accent);
-  margin-bottom: 20px;
-}
-.work-details ul {
-  list-style: disc inside;
-  font-size: 1.1rem;
-  background: var(--gray);
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 700px;
-  margin: 0 auto;
-  box-shadow: var(--shadow);
-}
+
 
 .skills-grid {
   display: flex;
@@ -326,7 +311,12 @@ nav.navbar {
 .footer-socials a:hover {
   color: var(--accent);
 }
+@media (max-width: 940px) { 
+  .home-section{
+        min-height: 65vh;
 
+  }
+}
 @media (max-width: 940px) {
   .about-section .about-content {
     flex-direction: column;
@@ -345,12 +335,12 @@ nav.navbar {
 
 @media (max-width: 768px) {
   nav.navbar {
-    padding: 0;
+    padding: 10px 20px;
   }
   .nav-links {
     display: none;
     flex-direction: column;
-    background: var(--primary);
+    background: var(--white);
     position: absolute;
     top: 100%;
     right: 0;
@@ -395,8 +385,6 @@ nav.navbar {
 }
 
 
-
-
 .timeline-section {
   max-width: 900px;
   margin: 48px auto 0 auto;
@@ -406,12 +394,11 @@ nav.navbar {
   padding: 40px 24px 56px 24px;
 }
 
-.timeline-title {
+.timeline-title,.skills-section h2, .projects-section h2, .contact-section h2{
   text-align: center;
   font-weight: 600;
   font-size: 2rem;
   letter-spacing: 2px;
-  margin-bottom: 0;
   color: var(--primary);
 }
 
