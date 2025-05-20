@@ -47,13 +47,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Timeline data
 const timelineData = [
   {
-    date: "2nd april – Now",
+    date: "2nd April 25 – Now",
     title: "Software Developer Intern",
     org: "MPSEDC",
     desc: "Contributing to the Samagra project, focusing on software development and implementation. Gaining real-world experience in delivering impactful technological solutions."
   },
   {
-    date: "10th Oct 2023 – 10th Nov 2023",
+    date: "10th Oct23 – 10th Nov23",
     title: "Intern - App Development",
     org: "Bharat Intern",
     desc: "Enhanced coding skills and gained practical insights into app development during a hands-on internship. A valuable learning experience."

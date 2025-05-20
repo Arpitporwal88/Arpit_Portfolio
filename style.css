@@ -2,7 +2,7 @@
   --primary: #22223b;
   --accent: #22223b;
   --light: #f2e9e4;
-  --bg: #c9ada7;
+  --bg: #e5c6a9;
   --white: #fff;
   --gray: #e0e0e0;
   --shadow: 0 2px 8px rgba(0,0,0,0.07);
@@ -103,7 +103,8 @@ nav.navbar {
   min-height: 95vh;
   align-items: center;
   justify-content: center;
-  background: var(--bg);
+  background-image: url('images/image.png');
+  /* background: var(--bg); */
   text-align: center;
   box-shadow: var(--shadow);
 }
@@ -313,14 +314,14 @@ nav.navbar {
 }
 @media (max-width: 940px) { 
   .home-section{
-        min-height: 65vh;
+        min-height: 85vh;
 
   }
 }
 @media (max-width: 940px) {
   .about-section .about-content {
     flex-direction: column;
-    gap: 18px;
+    gap: 5px;
   }
   .skills-grid {
     flex-direction: column;
@@ -335,7 +336,7 @@ nav.navbar {
 
 @media (max-width: 768px) {
   nav.navbar {
-    padding: 10px 20px;
+    padding: 0px 0px;
   }
   .nav-links {
     display: none;
@@ -374,6 +375,12 @@ nav.navbar {
     width: 120px;
     height: 120px;
   }
+  .about-text h2 , p {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--primary);
+    text-align: center;
+}
   .project-card {
     width: 96%;
     min-width: 0;
@@ -573,5 +580,69 @@ nav.navbar {
     top: 0;
     transform: none;
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .timeline-list {
+    gap: 20px;
+  }
+  .timeline-row {
+    min-height: 0;
+    margin-bottom: 0;
+  }
+  .timeline-row,
+  .timeline-row.even {
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .timeline-col,
+  .timeline-col.right {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 100vw;
+    padding: 0 4px;
+    margin: 0;
+  }
+  .timeline-card {
+    min-width: 0;
+    max-width: 95vw;
+    padding: 14px 10px 13px 10px;
+    font-size: 0.96rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px 0 rgba(34,34,59,0.11);
+  }
+  .timeline-date {
+    min-width: 80px;
+    font-size: 0.93rem;
+    padding: 7px 10px;
+    margin: 0 5px;
+    border-radius: 19px;
+  }
+  .timeline-dot,
+  .timeline-row.even .timeline-dot {
+    left: 50%;
+    right: auto;
+    top: 37px;
+    transform: translate(-50%, 0);
+    width: 13px;
+    height: 13px;
+    border-width: 2px;
+  }
+  .timeline-container::before {
+    left: 50%;
+    width: 3px;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  .timeline-title {
+    font-size: 1.2rem;
+  }
+  .timeline-section {
+    padding: 18px 2vw 24px 2vw;
+    border-radius: 12px;
   }
 }
