@@ -188,10 +188,6 @@ nav.navbar {
     margin: 0;
 }
 
- .skills-section h2, .projects-section h2, .contact-section h2 {
-  margin-bottom: 70px;
-}
-
 
 .skills-grid {
   display: flex;
@@ -362,6 +358,10 @@ nav.navbar {
   .footer-content {
     gap: 5px;
   }
+  #p{
+    font-size: 1rem;
+    color: var(--white);
+  }
 }
 
 @media (max-width: 540px) {
@@ -375,7 +375,7 @@ nav.navbar {
     width: 120px;
     height: 120px;
   }
-  .about-text h2 , p {
+  .about-text h2, p {
     font-size: 2rem;
     margin-bottom: 10px;
     color: var(--primary);
