@@ -104,7 +104,6 @@ nav.navbar {
   align-items: center;
   justify-content: center;
   background-image: url('images/image.png');
-  background-repeat:no-repeat;
   /* background: var(--bg); */
   text-align: center;
   box-shadow: var(--shadow);
