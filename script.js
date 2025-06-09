@@ -121,3 +121,60 @@ function renderTimeline() {
 }
 
 renderTimeline();
+
+
+
+ function showSkills(category) {
+            const buttons = document.querySelectorAll('.category-buttons button');
+            buttons.forEach(button => button.classList.remove('active'));
+
+            const selectedButton = Array.from(buttons).find(button => button.textContent.toLowerCase().includes(category));
+            if (selectedButton) {
+                selectedButton.classList.add('active');
+            }
+
+            const skillsList = document.getElementById('skills-list');
+
+            // Example dynamic skill switching
+            const skills = {
+                'web-design': [
+                    { name: 'HTML', percentage: 84 },
+                    { name: 'CSS', percentage: 75 },
+                    { name: 'Bootstrap', percentage: 79 },
+                    { name: 'Responsive Design', percentage: 79 },
+                ],
+                programming: [
+                    { name: 'Java', percentage: 80 },
+                    { name: 'C#', percentage: 75 },
+                    { name: 'JavaScript', percentage: 70 },
+                    { name: 'C++', percentage: 70 },
+                ],
+                frameworks: [
+                    { name: 'Asp Dotnet Core', percentage: 90 },
+                    { name: 'Spring & Spring Boot', percentage: 90 },
+                    { name: 'Webforms', percentage: 60 },
+                ],
+                tools: [
+                    { name: 'Git & GitHub', percentage: 90 },
+                    { name: 'VS Code', percentage: 90 },
+                    { name: 'Docker', percentage: 60 },
+                    { name: 'Postman', percentage: 70 },
+                ],
+                language: [
+                    { name: 'English', percentage: 80 },
+                    { name: 'Hindi', percentage: 85 },
+                ]
+            };
+
+            skillsList.innerHTML = '';
+            skills[category].forEach(skill => {
+                const skillElement = document.createElement('div');
+                skillElement.className = 'skill';
+                skillElement.innerHTML = `
+                    <span class="skill-name">${skill.name}</span>
+                    <div class="progress-bar"><span style="width: ${skill.percentage}%;"></span></div>
+                    <span class="percentage">${skill.percentage}%</span>
+                `;
+                skillsList.appendChild(skillElement);
+            });
+        }

@@ -70,67 +70,41 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section skills-section">
-    <div class="container">
-      <h2>WORK EXPERTISE</h2>
-      <div class="timeline-underline"></div>
-      <div class="skills-grid">
-        <div class="skill-cat">
-          <h3>Web Design</h3>
-          <div class="skill-item">
-            <span>HTML5</span>
-            <div class="skill-bar"><div class="skill-level" style="width:90%"></div></div>
-          </div>
-          <div class="skill-item">
-            <span>CSS3</span>
-            <div class="skill-bar"><div class="skill-level" style="width:70%"></div></div>
-          </div>
-          <div class="skill-item">
-            <span>Responsive Design</span>
-            <div class="skill-bar"><div class="skill-level" style="width:80%"></div></div>
-          </div>
+ <div id="skills" class="skills-container">
+        <div class="left-column">
+            <img src="images/image.png" alt="Brain Graphic">
         </div>
-        <div class="skill-cat">
-          <h3>Programming</h3>
-          <div class="skill-item">
-            <span>Java</span>
-            <div class="skill-bar"><div class="skill-level" style="width:80%"></div></div>
-          </div>
-          <div class="skill-item">
-            <span>C#</span>
-            <div class="skill-bar"><div class="skill-level" style="width:70%"></div></div>
-          </div>
-          <div class="skill-item">
-            <span>JavaScript</span>
-            <div class="skill-bar"><div class="skill-level" style="width:75%"></div></div>
-          </div>
+        <div class="right-column">
+            <h2>WORK EXPERTISE</h2>
+            <div class="timeline-underline"></div>
+            <p class="timeline-desc">I am a full-stack developer and a fresher in the field.</p>
+            <div class="category-buttons">
+                <button class="active" onclick="showSkills('web-design')">Web Design</button>
+                <button onclick="showSkills('programming')">Programming</button>
+                <button onclick="showSkills('frameworks')">Frameworks</button>
+                <button onclick="showSkills('tools')">Tools</button>
+                <button onclick="showSkills('language')">Language Skill</button>
+            </div>
+            <div class="skills" id="skills-list">
+                <div class="skill">
+                    <span class="skill-name">HTML</span>
+                    <div class="progress-bar"><span style="width: 84%;"></span></div>
+                    <span class="percentage">84%</span>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">CSS</span>
+                    <div class="progress-bar"><span style="width: 75%;"></span></div>
+                    <span class="percentage">75%</span>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">Bootstrap</span>
+                    <div class="progress-bar"><span style="width: 79%;"></span></div>
+                    <span class="percentage">79%</span>
+                </div>
+            </div>
         </div>
-        <div class="skill-cat">
-          <h3>Tools</h3>
-          <div class="skill-item">
-            <span>Git & GitHub</span>
-            <div class="skill-bar"><div class="skill-level" style="width:85%"></div></div>
-          </div>
-          <div class="skill-item">
-            <span>VS Code</span>
-            <div class="skill-bar"><div class="skill-level" style="width:80%"></div></div>
-          </div>
-        </div>
-        <div class="skill-cat">
-          <h3>Language Skills</h3>
-          <div class="skill-item">
-            <span>English</span>
-            <div class="skill-bar"><div class="skill-level" style="width:85%"></div></div>
-          </div>
-          <div class="skill-item">
-            <span>Hindi</span>
-            <div class="skill-bar"><div class="skill-level" style="width:95%"></div></div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+
 
   <!-- Projects Section -->
   <section id="projects" class="section projects-section">
