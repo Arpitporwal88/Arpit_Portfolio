@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Arpit Porwal | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Contact.css">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
   <!-- Navbar -->
   <nav class="navbar">
@@ -22,8 +26,10 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-socials">
-        <a href="https://www.linkedin.com/in/arpit-porwal-146a20237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/abhi_porwal_?igsh=cGYwajY3NmZlMzJt" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/arpit-porwal-146a20237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/abhi_porwal_?igsh=cGYwajY3NmZlMzJt" target="_blank"><i
+            class="fab fa-instagram"></i></a>
         <a href="https://github.com/Arpitporwal88" target="_blank"><i class="fab fa-github"></i></a>
       </div>
       <div class="menu-toggle" id="mobile-menu">
@@ -70,92 +76,142 @@
     </div>
   </section>
 
- <div id="skills" class="skills-container">
-        <div class="left-column">
-            <img src="images/image.png" alt="Brain Graphic">
-        </div>
-        <div class="right-column">
-            <h2>WORK EXPERTISE</h2>
-            <div class="timeline-underline"></div>
-            <p class="timeline-desc">I am a full-stack developer and a fresher in the field.</p>
-            <div class="category-buttons">
-                <button class="active" onclick="showSkills('web-design')">Web Design</button>
-                <button onclick="showSkills('programming')">Programming</button>
-                <button onclick="showSkills('frameworks')">Frameworks</button>
-                <button onclick="showSkills('tools')">Tools</button>
-                <button onclick="showSkills('language')">Language Skill</button>
-            </div>
-            <div class="skills" id="skills-list">
-                <div class="skill">
-                    <span class="skill-name">HTML</span>
-                    <div class="progress-bar"><span style="width: 84%;"></span></div>
-                    <span class="percentage">84%</span>
-                </div>
-                <div class="skill">
-                    <span class="skill-name">CSS</span>
-                    <div class="progress-bar"><span style="width: 75%;"></span></div>
-                    <span class="percentage">75%</span>
-                </div>
-                <div class="skill">
-                    <span class="skill-name">Bootstrap</span>
-                    <div class="progress-bar"><span style="width: 79%;"></span></div>
-                    <span class="percentage">79%</span>
-                </div>
-            </div>
-        </div>
+  <div id="skills" class="skills-container">
+    <div class="left-column">
+      <img src="images/Skills.png" alt="Brain Graphic">
     </div>
+    <div class="right-column">
+      <h2>WORK EXPERTISE</h2>
+      <div class="timeline-underline"></div>
+      <p class="timeline-desc">I am a full-stack developer and a fresher in the field.</p>
+      <div class="category-buttons">
+        <button class="active" onclick="showSkills('web-design')">Web Design</button>
+        <button onclick="showSkills('programming')">Programming</button>
+        <button onclick="showSkills('frameworks')">Frameworks</button>
+        <button onclick="showSkills('tools')">Tools</button>
+        <button onclick="showSkills('language')">Language Skill</button>
+      </div>
+      <div class="skills" id="skills-list">
+        <div class="skill">
+          <span class="skill-name">HTML</span>
+          <div class="progress-bar"><span style="width: 84%;"></span></div>
+          <span class="percentage">84%</span>
+        </div>
+        <div class="skill">
+          <span class="skill-name">CSS</span>
+          <div class="progress-bar"><span style="width: 75%;"></span></div>
+          <span class="percentage">75%</span>
+        </div>
+        <div class="skill">
+          <span class="skill-name">Bootstrap</span>
+          <div class="progress-bar"><span style="width: 79%;"></span></div>
+          <span class="percentage">79%</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- Projects Section -->
   <section id="projects" class="section projects-section">
-    <div class="container">
       <h2>PROJECTS</h2>
       <div class="timeline-underline"></div>
       <div class="projects-grid">
         <div class="project-card">
           <img src="images/project1.png" alt="Project 1 Image">
           <h3>Employee Management System</h3>
-          <p>An Employee Management System (EMS) built using Java Spring Boot for the backend and HTML, CSS, and JavaScript for the frontend. Designed to efficiently manage employee data with features like CRUD operations and a user-friendly interface.</p>
+          <p>An Employee Management System (EMS) built using Java Spring Boot for the backend and HTML, CSS, and
+            JavaScript for the frontend. Designed to efficiently manage employee data with features like CRUD operations
+            and a user-friendly interface.</p>
         </div>
         <div class="project-card">
-          <img src="images/project2.png"Project 2 Image">
+          <img src="images/project2.png" Project 2 Image">
           <h3>Currency Converter</h3>
-          <p>A Currency Converter application built with HTML, CSS, and JavaScript. It uses the Flags API for country flags and fetches live exchange rate data to provide real-time currency conversions with a sleek and interactive interface.</p>
+          <p>A Currency Converter application built with HTML, CSS, and JavaScript. It uses the Flags API for country
+            flags and fetches live exchange rate data to provide real-time currency conversions with a sleek and
+            interactive interface.</p>
         </div>
         <div class="project-card">
           <img src="images/project3.png" alt="Project 3 Image">
           <h3>Login & Register Authentication</h3>
-          <p>A Login and Register Authentication system built using Java Servlets and JSP with a MySQL database. It includes secure user authentication, registration, and session management functionalities, providing a reliable and user-friendly experience.</p>
+          <p>A Login and Register Authentication system built using Java Servlets and JSP with a MySQL database. It
+            includes secure user authentication, registration, and session management functionalities, providing a
+            reliable and user-friendly experience.</p>
         </div>
       </div>
-    </div>
+
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section contact-section">
-    <div class="container contact-content">
+
+  <section id="contact" class="section projects-section">
       <h2>CONTACT</h2>
       <div class="timeline-underline"></div>
-      <div class="contact-details">
-        <div>
-          <i class="fas fa-phone"></i>
-          <span>+91-8839851878</span>
-        </div>
-        <div>
-          <i class="fas fa-envelope"></i>
-          <span>arpitporwal383@gmail.com</span>
-        </div>
-      </div>
-    </div>
-  </section>
+      <ul class="list-icon-items clearfix no-margins">
+        <li class="grid-4 secondary alpha">
+          <a class="js-track" data-track-action="email submission" data-track-category="contact">
+            <i class="circ large icon tertiary">
+              <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                <circle cx="15" cy="15" r="15" fill="#e0e0e0" />
+                <rect x="7" y="10" width="16" height="10" rx="2" fill="currentColor" />
+                <polyline points="7,12 15,17 23,12" fill="none" stroke="#e0e0e0" stroke-width="1" />
+              </svg>
+            </i>
+            <h4 class="secondary">Email</h4>
+            <p>
+              <span class="pseudo-link"><span class="__cf_email__"
+                  data-cfemail="dcb4b9b0b0b39cbea9b5b0a8bea5bea9bababdb0b3f2bfb3b1">arpitporwal383@gmail.com</span></span>
+            </p>
+          </a>
 
+        <li class="grid-4 secondary">
+          <a>
+            <i class="circ large icon tertiary">
+
+              <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                <circle cx="15" cy="15" r="15" fill="#e0e0e0" />
+                <path
+                  d="M22.1 19.37c-1.26-.56-2.5-1.18-3.64-1.86a1.91 1.91 0 0 0-2.08-.03l-1.13.68a11.13 11.13 0 0 1-4.95-4.95l.68-1.13a1.91 1.91 0 0 0-.03-2.08c-.68-1.14-1.3-2.38-1.86-3.64A1.7 1.7 0 0 0 6.62 6.6H5.09A1.09 1.09 0 0 0 4 7.69c0 9.28 7.53 16.81 16.81 16.81a1.09 1.09 0 0 0 1.09-1.09v-1.53a1.7 1.7 0 0 0-1.8-1.51z"
+                  fill="currentColor" />
+              </svg>
+            </i>
+            <h4 class="secondary">Phone</h4>
+            <p>
+              <span class="pseudo-link">8839851878</span>
+            </p>
+          </a>
+
+        <li class="grid-4 secondary">
+          <a class="js-track"
+            href="https://www.linkedin.com/in/arpit-porwal-146a20237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            data-track-action="instagram follow" data-track-category="contact">
+            <i class="circ large icon tertiary">
+              <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                <circle cx="15" cy="15" r="15" fill="#e0e0e0" />
+                <rect x="8" y="8" width="14" height="14" rx="3" fill="#0077b5" />
+                <rect x="11" y="13" width="2" height="6" fill="#fff" />
+                <circle cx="12" cy="11" r="1" fill="#fff" />
+                <rect x="15" y="13" width="2" height="6" fill="#fff" />
+                <path d="M19 13c1 0 2 .8 2 2v4h-2v-4c0-.6-.4-1-1-1s-1 .4-1 1v4h-2v-6h2v.9c.3-.6 1-1.1 2-1.1z"
+                  fill="#fff" />
+              </svg>
+            </i>
+            <h4 class="secondary">Linkedin</h4>
+            <p>
+              <span class="pseudo-link">Connect</span>
+            </p>
+          </a>
+      </ul>
+  </section>
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
       <p id="p">&copy; 2025 Arpit Porwal. All rights reserved.</p>
       <div class="footer-socials">
-        <a href="https://www.linkedin.com/in/arpit-porwal-146a20237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/abhi_porwal_?igsh=cGYwajY3NmZlMzJt" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/arpit-porwal-146a20237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/abhi_porwal_?igsh=cGYwajY3NmZlMzJt" target="_blank"><i
+            class="fab fa-instagram"></i></a>
         <a href="https://github.com/Arpitporwal88" target="_blank"><i class="fab fa-github"></i></a>
       </div>
     </div>
@@ -163,4 +219,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

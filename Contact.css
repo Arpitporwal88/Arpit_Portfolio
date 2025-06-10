@@ -1,0 +1,78 @@
+/* Section styling */
+/* .section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+} */
+
+/* .section h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+} */
+
+/* List items grid */
+.list-icon-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-icon-items li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.list-icon-items li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.list-icon-items a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.icon {
+    margin-bottom: 15px;
+}
+
+.icon svg {
+    width: 50px;
+    height: 50px;
+    fill: #007bff;
+}
+
+h4.secondary {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.pseudo-link {
+    color: #555;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .list-icon-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-icon-items li {
+        width: 100%;
+        max-width: 90%;
+    }
+}
